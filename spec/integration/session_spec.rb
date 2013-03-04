@@ -110,11 +110,11 @@ describe Capybara::Session do
       end
 
       it 'fires the keydown event' do
-        @session.find(:css, '#changes_on_keydown').text.should == "6"
+        @session.find(:css, '#changes_on_keydown').text.should == "7"
       end
 
       it 'fires the keyup event' do
-        @session.find(:css, '#changes_on_keyup').text.should == "6"
+        @session.find(:css, '#changes_on_keyup').text.should == "7"
       end
 
       it 'fires the keypress event' do
