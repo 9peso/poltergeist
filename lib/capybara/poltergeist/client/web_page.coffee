@@ -128,6 +128,9 @@ class Poltergeist.WebPage
   deleteCookie: (name) ->
     @native.deleteCookie(name)
 
+  clearCookies: ->
+    @native.clearCookies()
+
   viewportSize: ->
     @native.viewportSize
 

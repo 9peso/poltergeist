@@ -281,6 +281,10 @@ class Poltergeist.Browser
     @page.deleteCookie(name)
     this.sendResponse(true)
 
+  clear_cookies: ->
+    @page.clearCookies()
+    this.sendResponse(true)
+
   set_js_errors: (value) ->
     @js_errors = value
     this.sendResponse(true)
