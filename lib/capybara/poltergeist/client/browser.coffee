@@ -89,6 +89,10 @@ class Poltergeist.Browser
   current_url: ->
     this.sendResponse @page.currentUrl()
 
+  reload: ->
+    this.setState 'loading'
+    @page.reload()
+
   status_code: ->
     this.sendResponse @page.statusCode()
 

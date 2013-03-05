@@ -119,6 +119,9 @@ class Poltergeist.WebPage
       headers[item.name] = item.value
     headers
 
+  reload: ->
+    @native.reload()
+
   cookies: ->
     @native.cookies
 
